@@ -1,0 +1,67 @@
+
+/* xrbyrgeg */
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.border {
+  border: 1px solid #f00;
+}
+
+/*---- Scroll ---**/
+::-webkit-scrollbar {
+  width: 0.88rem;
+}
+
+::-webkit-scrollbar-track {
+  border: 7px solid #292c3b;
+  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  background-color: #d4d4d8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* for Firefox */
+/* html {scrollbar-color: #9e4673 #3d4a59;}  */
+
+/*---- Fonts ---**/
+@font-face {
+  font-family: "robotooo";
+  src: url("/static/Roboto-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "robotooo";
+  src: url("/static/Roboto-Thin.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "robotooo";
+  src: url("/static/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "robotooo";
+  src: url("/static/Roboto-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "robotooo";
+  src: url("/static/Roboto-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "robotooo";
+  src: url("/static/Roboto-Medium.ttf");
+  font-weight: 600;
+}

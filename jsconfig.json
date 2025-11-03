@@ -1,0 +1,32 @@
+
+// {
+//    "compilerOptions": {
+//      "checkJs": true,
+//      "jsx": "react-jsx",
+//      "baseUrl": "src",
+//      "resolveJsonModule": true,
+//      "lib": ["es6", "dom", "es2017"],
+//    },
+//    "include": [
+//      "src"
+//    ],
+//    "exclude": [
+//      "node_modules",
+//      "build"
+//    ]
+//  }
+
+{
+  "compilerOptions": {
+    "checkJs": true,              // ✅ فعل الـ type checking لملفات JS
+    "jsx": "react-jsx",           // ✅ React 17+ JSX transform
+    // "baseUrl": "src",             // ✅ absolute imports من مجلد src
+    "resolveJsonModule": true,    // ✅ استيراد JSON كـ module
+    "lib": ["es6", "dom", "es2017"],
+    "skipLibCheck": true,         // 🚫 تجاهل مشاكل typings جوه المكتبات (زي MUI)
+    "noUnusedLocals": true,       // ⚠️ متغير مش مستخدم → خط أصفر
+    "noUnusedParameters": true    // ⚠️ بارامتر فانكشن مش مستخدم → خط أصفر
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "build"]
+}

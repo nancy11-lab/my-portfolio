@@ -4,7 +4,7 @@
     "title": "Prayer Timing",
     "description": "built a responsive project using React(Vite), MUI, Axios for API calls, Moment.js for arabic data/time , and useEffect for data handling",
     "technologies": ["React.js", "MUI", "Axios Api", "Moment.js"],
-    "image": "/images/prayerr.png",
+    "image": "images/prayerr.png",
     "category": ["react"],
     "github": "https://github.com/nancy11-lab/Prayer-App-WithSearch",
     "demo": "https://nancy11-lab.github.io/Prayer-App-WithSearch/"
@@ -14,7 +14,7 @@
     "title": "Age Calcolutor",
     "description": "Responsive React (Vite) app with dynamic validation, i18next language support, and Gregorian ↔ Hijri date conversion using Moment Hijri",
     "technologies": ["React.js", "MUI" , "i18next" , "Moment Hijri"],
-    "image": "/images/agecalc-app.png",
+    "image": "images/agecalc-app.png",
     "category": ["react"],
     "github": "https://github.com/nancy11-lab/Age-Calculator-App",
     "demo": "https://nancy11-lab.github.io/Age-Calculator-App/"
@@ -24,7 +24,7 @@
     "title": "Weather App",
     "description": "A React application built using Redux for state management, Localization for multi-language support, Moment.js for date formatting, and Material UI for a modern and fully responsive interface.",
     "technologies": ["React", "MUI", "Axios", "Redux"],
-    "image": "/images/weather.png",
+    "image": "images/weather.png",
     "category": ["react"],
     "github": "https://github.com/nancy11-lab/Weather-App-Redux",
     "demo": "https://nancy11-lab.github.io/Weather-App-Redux/"
@@ -34,7 +34,7 @@
     "title": "Todo List",
     "description": "A simple todo list application using React hooks and localStorage.",
     "technologies": ["React.js", "Hooks", "LocalStorage"],
-    "image": "/images/todoList.png",
+    "image": "images/todoList.png",
     "category": ["react"],
     "github": "https://github.com/nancy11-lab/Todo-List-ReactJs",
     "demo": "https://nancy11-lab.github.io/Todo-List-ReactJs/"
@@ -45,7 +45,7 @@
     "title": "Posts-App",
     "description": "Social App – Responsive social platform with login, posts, comments, profiles, built with JS, Bootstrap, and Axios.",
     "technologies": ["Html5", "Bootstrap", "Javascript", "Axios"],
-    "image": "/images/project-js.png",
+    "image": "images/project-js.png",
     "category": ["js", "bootstrap"],
     "github": "https://github.com/nancy11-lab/MyPosts-App",
     "demo": "https://nancy11-lab.github.io/MyPosts-App/"
@@ -55,7 +55,7 @@
     "title": "ThemeCraft",
     "description": "A customizable landing page with theme colors, dark/light mode, and saved user preferences using localStorage.",
     "technologies": ["Html5", "Css", "Javascript", "LocalStorage"],
-    "image": "/images/themecraft.png",
+    "image": "images/themecraft.png",
     "category": ["js"],
     "github": "https://github.com/nancy11-lab/ThemeCraft",
     "demo": "https://nancy11-lab.github.io/ThemeCraft/"
@@ -66,7 +66,7 @@
     "title": "JumiaUI",
     "description": "A static Jumia clone using HTML, CSS, and Bootstrap, featuring responsive pages for Home, Product, Cart, and Login designed layout only no interactive functionality.",
     "technologies": ["Html5", "css3", "Bootstrap"],
-    "image": "/images/jumiaUI.png",
+    "image": "images/jumiaUI.png",
     "category": ["html", "bootstrap"],
     "github": "https://github.com/nancy11-lab/JumiaUI",
     "demo": "https://nancy11-lab.github.io/JumiaUI/"
@@ -77,7 +77,7 @@
     "title": "Template-Two",
     "description": "A front-end template built with HTML, CSS, and JavaScript. It focuses on clean design, responsive layout. This project serves as a practice for implementing modern web layouts and styling techniques.",
     "technologies": ["Html5", "css3", "Javascript"],
-    "image": "/images/template-two.png",
+    "image": "images/template-two.png",
     "category": ["js", "html"],
     "github": "https://github.com/nancy11-lab/Template-Two",
     "demo": "https://nancy11-lab.github.io/Template-Two/"
@@ -87,7 +87,7 @@
     "title": "Template-Three",
     "description": "A front-end template built with HTML, CSS, and JavaScript. It focuses on clean design, responsive layout. This project serves as a practice for implementing modern web layouts and styling techniques.",
     "technologies": ["Html5", "css3", "Javascript"],
-    "image": "/images/template-3.png",
+    "image": "images/template-3.png",
     "category": ["html"],
     "github": "https://github.com/nancy11-lab/Template-Three",
     "demo": "https://nancy11-lab.github.io/Template-Three/"
@@ -97,7 +97,7 @@
     "title": "Dashboard",
     "description": "Responsive dashboard layout built with HTML and CSS , featuring modern design and cleav structure. ",
     "technologies": ["Html5", "css3"],
-    "image": "/images/dashboard.png",
+    "image": "images/dashboard.png",
     "category": ["html"],
     "github": "https://github.com/nancy11-lab/Template-Four",
     "demo": "https://nancy11-lab.github.io/Template-Four/"
@@ -107,7 +107,7 @@
     "title": "Template-one",
     "description": "A front-end template built with HTML, CSS, and JavaScript. It focuses on clean design, responsive layout. This project serves as a practice for implementing modern web layouts and styling techniques.",
     "technologies": ["Html5", "css3"],
-    "image": "/images/template-one.png",
+    "image": "images/template-one.png",
     "category": ["html"],
     "github": "https://github.com/nancy11-lab/Template-one",
     "demo": "https://nancy11-lab.github.io/Template-one/"

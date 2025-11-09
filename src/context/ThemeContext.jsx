@@ -23,16 +23,17 @@ export default function CustomThemeProvider({ children }) {
 
   //  حفظ القيمة في localStorage عند أي تغيير
   // useEffect(() => {
-    
+
   //   localStorage.setItem("themeMode", themeMode);
   // }, [themeMode]);
 
-   useEffect(() => {
+  useEffect(() => {
     const savedMode = localStorage.getItem("themeMode");
-    if(savedMode)
-    localStorage.setItem("themeMode", savedMode);
-  setThemeMode(savedMode)
-  }, [themeMode]);
+    if (savedMode) {
+      setThemeMode(savedMode);
+    }
+   
+  }, []);
   //  متابعة تغييرات الـ system theme
   // useEffect(() => {
   //   const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -68,11 +69,16 @@ export default function CustomThemeProvider({ children }) {
     return createTheme({
       palette: {
         //@ts-ignore
-        mode: themeMode,
+        mode: themeMode || "dark",
         background:
           themeMode === "light"
-            ? // @ts-ignore
-              { default: "rgb(250, 250, 250)", paper: "rgb(255, 255, 255)", header: "rgb(253, 253 , 253)" }
+            ? 
+              {
+                default: "rgb(250, 250, 250)",
+                paper: "rgb(255, 255, 255)",
+                // @ts-ignore
+                header: "rgb(253, 253 , 253)",
+              }
             : {
                 default: "#000000",
                 paper: "rgb(24 24 27)",
@@ -84,7 +90,7 @@ export default function CustomThemeProvider({ children }) {
             ? "rgba( 202 , 202 , 202 , 0.518)"
             : "rgba( 63 , 63 , 70 , 0.4)",
         borderForm: themeMode === "light" ? "rgb(78 80 80)" : "rgb(92,232,220)",
-      },//rgb(92,232,220)   rgb(45 212 191)
+      }, //rgb(92,232,220)   rgb(45 212 191)
       typography: {
         fontFamily: ["robotooo", "Arial", "sans-serif"].join(","),
       },
@@ -116,7 +122,8 @@ export default function CustomThemeProvider({ children }) {
           styleOverrides: {
             body: {
               fontFamily: ["robotooo", "Arial", "sans-serif"].join(","),
-              backgroundColor: themeMode === "light" ? "rgb(250, 250, 250)" : "#000000",
+              backgroundColor:
+                themeMode === "light" ? "rgb(250, 250, 250)" : "#000000",
               color:
                 themeMode === "light" ? lightText.primary : darkText.primary,
               "--color-text-primary":

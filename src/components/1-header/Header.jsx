@@ -17,19 +17,17 @@ import MenuItem from "@mui/material/MenuItem";
 import { useTheme } from "@mui/material/styles";
 
 import { useThemeMode } from "../../context/ThemeContext";
-import { useState , forwardRef } from "react";
+import { useState, forwardRef } from "react";
 import ModeToggle from "../../features/ModeToggle";
 
 import navLinks from "../../data/navLinks.json";
 import { useActiveLink } from "../../context/ActiveLinkContext";
 
-const Header = forwardRef((props , ref) => {
+const Header = forwardRef((props, ref) => {
   const theme = useTheme();
   // @ts-ignore
   const { themeMode, toggleTheme } = useThemeMode();
   const [anchorElNav, setAnchorElNav] = useState(null);
-
-  
 
   // active link & scroll
   // @ts-ignore
@@ -48,7 +46,7 @@ const Header = forwardRef((props , ref) => {
       ref={ref}
       position="fixed"
       color="transparent"
-      sx={{ boxShadow: "none", zIndex: (t) => t.zIndex.appBar }}
+      sx={{ boxShadow: "none", zIndex: (t) => t.zIndex.appBar, height: "75px" }}
     >
       <Container
         maxWidth="md"
@@ -57,6 +55,7 @@ const Header = forwardRef((props , ref) => {
           py: { xs: "0.5rem", md: "0.3rem" },
           borderLeft: `1px solid ${theme.palette.divider}`,
           borderRight: `1px solid ${theme.palette.divider}`,
+          height: "100%",
         }}
       >
         <Toolbar
@@ -152,7 +151,8 @@ const Header = forwardRef((props , ref) => {
                 return (
                   <Box key={link.label}>
                     <MenuItem
-                      onClick={() => {
+                      onClick={(e) => {
+                        e.preventDefault();
                         handleClick(link.href);
                         handleCloseNavMenu();
                       }}
@@ -212,7 +212,10 @@ const Header = forwardRef((props , ref) => {
           >
             {navLinks.map((link) => (
               <Button
-                onClick={() => handleClick(link.href)}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleClick(link.href);
+                }}
                 component="a"
                 href={link.href}
                 key={link.label}
